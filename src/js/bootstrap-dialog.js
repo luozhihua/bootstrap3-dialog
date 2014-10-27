@@ -75,6 +75,7 @@
     BootstrapDialog.DEFAULT_TEXTS[BootstrapDialog.TYPE_WARNING] = 'Warning';
     BootstrapDialog.DEFAULT_TEXTS[BootstrapDialog.TYPE_DANGER] = 'Danger';
     BootstrapDialog.DEFAULT_TEXTS['OK'] = 'OK';
+    BootstrapDialog.DEFAULT_TEXTS['CONFIRMATION'] = 'Confirmation';
     BootstrapDialog.DEFAULT_TEXTS['CANCEL'] = 'Cancel';
 
     BootstrapDialog.SIZE_NORMAL = 'size-normal';
@@ -1022,7 +1023,7 @@
      */
     BootstrapDialog.confirm = function(message, callback) {
         return new BootstrapDialog({
-            title: 'Confirmation',
+            title: BootstrapDialog.DEFAULT_TEXTS['CONFIRMATION'], //'Confirmation',
             message: message,
             closable: false,
             data: {
